@@ -1609,6 +1609,7 @@ header {
   border-radius: 55px;
   border: 1px solid #ddd;
   color: #999;
+  opacity: 0.6;
   margin-bottom: 5px;
   text-transform: capitalize;
   font-size: 0.9rem;
