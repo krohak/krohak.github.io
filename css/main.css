@@ -1410,8 +1410,8 @@ header {
 
 @media screen and (min-width: 700px) {
   .project {
-    /*padding-left: 1rem;
-    padding-right: 1rem;*/
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
