@@ -1307,6 +1307,7 @@ header {
   font-weight: 500;
   margin-bottom: .1em;
   padding-top: 40px;
+  color: #5d5d5d;
 }
 
 #intro-section {
@@ -1532,6 +1533,7 @@ header {
 .project-box {
   margin-bottom: 20px;
   cursor: pointer;
+  color: #5d5d5d;
 }
 
 .project-box:nth-child(4n+1) {
@@ -1545,14 +1547,15 @@ header {
 }
 
 .project-box .title {
-  opacity: .5;
+  opacity: 1;
+  color: #5d5d5d;
   font-weight: 300;
   font-size: 14px;
   transition: all 0.3s cubic-bezier(0.42, 0, 0.52, 0.96);
 }
 
 .project-box:hover .title {
-  opacity: 1;
+  opacity: 0.5;
   color: #5d5d5d;
   transition: all 0.3s cubic-bezier(0.42, 0, 0.52, 0.96);
 }
