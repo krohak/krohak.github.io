@@ -20,16 +20,22 @@
   <script src="js/main.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-106372483-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    ga('create', 'UA-106372483-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
 </head>
 
@@ -49,21 +55,26 @@
     <div id="work-section" class="section">
       <div class="row">
         <div class="col-md-12 col-xs-12">
-          <h2 class="section-title"><!--my work--></h2>
+          <!--h2 class="section-title"><my work></h2-->
         </div>
-        <div class="col-md-12 col-xs-12">
+        <div class="col-md-12 col-xs-12 center-md">
           <ul class="list-inline">
-            <li><a class="project-detail-role category android" href="#work-section" data-selected="false">android</a></li>
-            <li><a class="project-detail-role category arduino" href="#work-section" data-selected="false">arduino</a></li>
-            <li><a class="project-detail-role category rpi" href="#work-section" data-selected="false">raspberry pi</a></li>
-            <li><a class="project-detail-role category web" href="#work-section" data-selected="false">web</a></li>
-            <li><a class="project-detail-role category music" href="#work-section" data-selected="false">music</a></li>
-            <li><a class="project-detail-role category tf" href="#work-section" data-selected="false">tensorflow</a></li>
+            <li><a class="project-detail-role category android" href="#work-section" data-selected="false">#android</a></li>
+            <li><a class="project-detail-role category arduino" href="#work-section" data-selected="false">#arduino</a></li>
+            <li><a class="project-detail-role category web" href="#work-section" data-selected="false">#web</a></li>
+            <li><a class="project-detail-role category rpi" href="#work-section" data-selected="false">#raspberry pi</a></li>
+            <li><a class="project-detail-role category music" href="#work-section" data-selected="false">#music</a></li>
+            <li><a class="project-detail-role category tf" href="#work-section" data-selected="false">#tensorflow</a></li>
           </ul>
         </div>
 
       </div>
       <div id="work-showcase" class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 project-box arduino web rpi">
+          <a href="mindorobots.html">
+            <div class="image"><img src="img/mind.jpg"></div>
+            <h3 class="title">MindoroBots</h3></a>
+        </div>
         <div class="col-xs-12 col-sm-6 col-md-4 project-box android arduino">
           <a href="protei-rohak.html">
             <div class="image"><img id="protei_rohak" src="img/protei_rohak.jpg" height="187.5"></div>
@@ -90,18 +101,13 @@
             <h3 class="title">The Zero Point</h3></a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 project-box tf">
-          <a href="cadl.html">
+          <a href="https://github.com/krohak/CADL" target="_blank">
             <div class="image"><img id="cadl" src="img/cadl.jpg" height="187.5" width="250"></div>
             <h3 class="title">Creative Applications of Deep Learning</h3></a>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 project-box android">
-          <a href="mindorobots.html">
-            <div class="image"><img src="img/mind.jpg"></div>
-            <h3 class="title">MindoroBots</h3></a>
-        </div>
         <div class="col-xs-12 col-sm-6 col-md-4 project-box arduino rpi tf">
-          <a href="projects.html">
-            <div class="image"><img id="projects" src="img/projects.jpg"></div>
+          <a href="https://github.com/krohak/Projects" target="_blank">
+            <div class="image"><img id="projects" src="img/projects.jpg" height="187.5"></div>
             <h3 class="title">Miscellaneous Projects</h3></a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 project-box arduino android music">
@@ -169,24 +175,26 @@
             </div>
             <div class="row">
               <div class="col-md-4 col-xs-12">
-                  <img src="img/krohak.jpg" class="img-circle2 img-responsive2 center-xs2" width="250" height="250" >
+                <img src="img/krohak.jpg" class="img-circle2 img-responsive2 center-xs2" width="250" height="250">
               </div>
               <div class="col-md-8 col-xs-12">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin et ante eu convallis. Integer nec pharetra odio. Duis eu massa sed elit commodo posuere. Vivamus vehicula rhoncus eros, ut volutpat neque congue id. Nulla suscipit condimentum ex, vel fermentum ipsum semper sit amet. Morbi vehicula neque at turpis placerat congue. Donec ligula metus, euismod ut porta nec, sodales nec magna. Aliquam neque odio, accumsan in leo eget, semper venenatis sem. Donec a hendrerit odio, sollicitudin sollicitudin sapien.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin et ante eu convallis. Integer nec pharetra odio. Duis eu massa sed elit commodo posuere. Vivamus vehicula rhoncus eros, ut volutpat neque congue id. Nulla suscipit condimentum
+                  ex, vel fermentum ipsum semper sit amet. Morbi vehicula neque at turpis placerat congue. Donec ligula metus, euismod ut porta nec, sodales nec magna. Aliquam neque odio, accumsan in leo eget, semper venenatis sem. Donec a hendrerit odio,
+                  sollicitudin sollicitudin sapien. Sed euismod porta libero, non faucibus turpis venenatis id. Nulla porttitor nunc sed quam cursus, non sollicitudin nisl imperdiet. Sed sed ante ac elit porttitor condimentum sit amet nec ex. Sed at molestie
+                  libero, in facilisis dui. Pellentesque imperdiet mi eu tincidunt finibus. Praesent orci erat, facilisis quis ante nec, tristique maximus libero. Nulla ut nibh tristique erat ornare sodales vitae ac nisl. Nunc diam turpis, rhoncus vel
+                  massa eu, euismod tempor arcu. Morbi metus ipsum, pretium id lectus a, fringilla mattis mi.
 
-Sed euismod porta libero, non faucibus turpis venenatis id. Nulla porttitor nunc sed quam cursus, non sollicitudin nisl imperdiet. Sed sed ante ac elit porttitor condimentum sit amet nec ex. Sed at molestie libero, in facilisis dui. Pellentesque imperdiet mi eu tincidunt finibus. Praesent orci erat, facilisis quis ante nec, tristique maximus libero. Nulla ut nibh tristique erat ornare sodales vitae ac nisl. Nunc diam turpis, rhoncus vel massa eu, euismod tempor arcu. Morbi metus ipsum, pretium id lectus a, fringilla mattis mi.
 
+                  <br></p>
 
-<br></p>
-
+              </div>
             </div>
-          </div>
           </div>
           <div class="project-items">
             <style>
               .work-layer>.content {
-                background:#000000;
+                background: #000000;
               }
             </style>
 

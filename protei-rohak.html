@@ -20,16 +20,22 @@
   <script src="js/main.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-106372483-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    ga('create', 'UA-106372483-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 
 </head>
 
@@ -49,21 +55,26 @@
     <div id="work-section" class="section">
       <div class="row">
         <div class="col-md-12 col-xs-12">
-          <h2 class="section-title"><!--my work--></h2>
+          <!--h2 class="section-title"><my work></h2-->
         </div>
-        <div class="col-md-12 col-xs-12">
+        <div class="col-md-12 col-xs-12 center-md">
           <ul class="list-inline">
-            <li><a class="project-detail-role category android" href="#work-section" data-selected="false">android</a></li>
-            <li><a class="project-detail-role category arduino" href="#work-section" data-selected="false">arduino</a></li>
-            <li><a class="project-detail-role category rpi" href="#work-section" data-selected="false">raspberry pi</a></li>
-            <li><a class="project-detail-role category web" href="#work-section" data-selected="false">web</a></li>
-            <li><a class="project-detail-role category music" href="#work-section" data-selected="false">music</a></li>
-            <li><a class="project-detail-role category tf" href="#work-section" data-selected="false">tensorflow</a></li>
+            <li><a class="project-detail-role category android" href="#work-section" data-selected="false">#android</a></li>
+            <li><a class="project-detail-role category arduino" href="#work-section" data-selected="false">#arduino</a></li>
+            <li><a class="project-detail-role category web" href="#work-section" data-selected="false">#web</a></li>
+            <li><a class="project-detail-role category rpi" href="#work-section" data-selected="false">#raspberry pi</a></li>
+            <li><a class="project-detail-role category music" href="#work-section" data-selected="false">#music</a></li>
+            <li><a class="project-detail-role category tf" href="#work-section" data-selected="false">#tensorflow</a></li>
           </ul>
         </div>
 
       </div>
       <div id="work-showcase" class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4 project-box arduino web rpi">
+          <a href="mindorobots.html">
+            <div class="image"><img src="img/mind.jpg"></div>
+            <h3 class="title">MindoroBots</h3></a>
+        </div>
         <div class="col-xs-12 col-sm-6 col-md-4 project-box android arduino">
           <a href="protei-rohak.html">
             <div class="image"><img id="protei_rohak" src="img/protei_rohak.jpg" height="187.5"></div>
@@ -90,18 +101,13 @@
             <h3 class="title">The Zero Point</h3></a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 project-box tf">
-          <a href="cadl.html">
+          <a href="https://github.com/krohak/CADL" target="_blank">
             <div class="image"><img id="cadl" src="img/cadl.jpg" height="187.5" width="250"></div>
             <h3 class="title">Creative Applications of Deep Learning</h3></a>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 project-box android">
-          <a href="mindorobots.html">
-            <div class="image"><img src="img/mind.jpg"></div>
-            <h3 class="title">MindoroBots</h3></a>
-        </div>
         <div class="col-xs-12 col-sm-6 col-md-4 project-box arduino rpi tf">
-          <a href="projects.html">
-            <div class="image"><img id="projects" src="img/projects.jpg"></div>
+          <a href="https://github.com/krohak/Projects" target="_blank">
+            <div class="image"><img id="projects" src="img/projects.jpg" height="187.5"></div>
             <h3 class="title">Miscellaneous Projects</h3></a>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 project-box arduino android music">
@@ -237,12 +243,12 @@
                   <img src="https://camo.githubusercontent.com/260040e6cdbff20addf4ee6ce9032a0c550a2a46/68747470733a2f2f63312e737461746963666c69636b722e636f6d2f352f343430392f33363232383736363832315f666561633431386136635f622e6a7067" class="web-shot" width="270px" />
                 </div>
                 <div class="col-md-12 center-xs">
-                  <img src="img/pr.gif" width="200px" style="margin-top:20px;"/>
+                  <img src="img/pr.gif" width="200px" style="margin-top:20px;" />
                 </div>
                 <div class="col-md-12 col-xs-12 center-md">
                   <p>
-                    <br>Find out more about Protei Rohak in <a id="a2" href="https://medium.com/@krohak/a-month-at-makerbay-with-scoutbots-protei-rohak-986f547ee46b" target="_blank">this Medium blog post</a>.<br>
-                    Checkout Protei Rohak on <a id="a2" href="https://www.scoutbots.com/protei/#/13rohak/" target="_blank">Scoutbots.com</a> and <a id="a2" href="https://github.com/Scoutbots/Protei" target="_blank">Github</a>. <br></p>
+                    <br>Find out more about Protei Rohak in <a id="a2" href="https://medium.com/@krohak/a-month-at-makerbay-with-scoutbots-protei-rohak-986f547ee46b" target="_blank">this Medium blog post</a>.<br> Checkout Protei Rohak on <a id="a2" href="https://www.scoutbots.com/protei/#/13rohak/"
+                      target="_blank">Scoutbots.com</a> and <a id="a2" href="https://github.com/Scoutbots/Protei" target="_blank">Github</a>. <br></p>
                 </div>
 
               </div>
