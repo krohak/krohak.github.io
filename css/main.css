@@ -1460,9 +1460,10 @@ header {
   opacity: .6;
 }
 
-@media screen and (max-width: 700px) {
-  .project-intro .details .class {
+@media screen and (max-width: 991px) {
+  .project-intro{
     display: block;
+    padding-left: 1rem;
   }
 }
 
