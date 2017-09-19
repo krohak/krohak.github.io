@@ -1333,7 +1333,6 @@ header {
 #intro-section .intro-text .subtitle {
   font-size: 1.3rem;
   font-weight: 500;
-  max-width: 600px;
 }
 
 #intro-section .intro-text a:after {
