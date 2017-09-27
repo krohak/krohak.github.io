@@ -1,6 +1,6 @@
 /* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
  * Credits to Hayk An for further inspiration
- * 
+ *
  */
 
 html {
@@ -68,9 +68,18 @@ h1 {
 
 h3 {
   font-size: 2.4em;
-  margin: 0.67em 0;
+  margin-top: 0.67em;
+  margin-bottom: 0.3em;
   color: #333333;
   font-weight: 400;
+  align-items: center;
+}
+
+h4 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  color: #333333;
+  font-weight: 300;
   align-items: center;
 }
 
@@ -1571,6 +1580,22 @@ header {
 }
 
 .project-box:hover .title {
+  opacity: 0.5;
+  color: #5d5d5d;
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.52, 0.96);
+}
+
+
+.project-box .subtitle {
+  opacity: 0.8;
+  color: #5d5d5d;
+  font-weight: 300;
+  font-size: 11px;
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.52, 0.96);
+  margin-top: 0rem;
+}
+
+.project-box:hover .subtitle {
   opacity: 0.5;
   color: #5d5d5d;
   transition: all 0.3s cubic-bezier(0.42, 0, 0.52, 0.96);
