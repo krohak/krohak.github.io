@@ -3,6 +3,21 @@
 var image_prot = new Image();
 image_prot.src = 'img/protei_rohak.gif';
 
+var image_mld = new Image();
+image_mld.src = 'img/mld.gif';
+
+var image_ires = new Image();
+image_ires.src = 'img/ires.gif';
+
+var image_tzp = new Image();
+image_tzp.src = 'img/tzp.gif';
+
+var image_cadl = new Image();
+image_cadl.src = 'img/cadl.gif';
+
+var image_proj = new Image();
+image_proj.src = 'img/projects.gif';
+
 $(document).ready(function() {
   $("#protei_rohak").hover(
     function() {
@@ -15,7 +30,7 @@ $(document).ready(function() {
 
   $("#mld").hover(
     function() {
-      $(this).attr("src", "img/mld.gif");
+      $(this).attr("src", image_mld.src);
     },
     function() {
       $(this).attr("src", "img/mld.jpg");
@@ -24,7 +39,7 @@ $(document).ready(function() {
 
   $("#ires").hover(
     function() {
-      $(this).attr("src", "img/ires.gif");
+      $(this).attr("src", image_ires.src);
     },
     function() {
       $(this).attr("src", "img/ires.jpg");
@@ -33,7 +48,7 @@ $(document).ready(function() {
 
   $("#tzp").hover(
     function() {
-      $(this).attr("src", "img/tzp.gif");
+      $(this).attr("src", image_tzp.src);
     },
     function() {
       $(this).attr("src", "img/tzp.jpg");
@@ -43,7 +58,7 @@ $(document).ready(function() {
 
   $("#cadl").hover(
     function() {
-      $(this).attr("src", "img/cadl.gif");
+      $(this).attr("src", image_cadl.src);
     },
     function() {
       $(this).attr("src", "img/cadl.jpg");
@@ -52,7 +67,7 @@ $(document).ready(function() {
 
   $("#projects").hover(
     function() {
-      $(this).attr("src", "img/projects.gif");
+      $(this).attr("src", image_proj.src);
     },
     function() {
       $(this).attr("src", "img/projects.jpg");
