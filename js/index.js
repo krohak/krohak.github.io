@@ -1,9 +1,12 @@
 //gifs
 
+var image_prot = new Image();
+image_prot.src = 'img/protei_rohak.gif';
+
 $(document).ready(function() {
   $("#protei_rohak").hover(
     function() {
-      $(this).attr("src", "img/protei_rohak.gif");
+      $(this).attr("src", image_prot.src);
     },
     function() {
       $(this).attr("src", "img/protei_rohak.jpg");
