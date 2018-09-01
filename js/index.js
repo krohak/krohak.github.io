@@ -153,11 +153,10 @@ $(document).ready(function() {
   $(".category.android").click(
 
     function(event) {
-      //  event.preventDefault();
 
-      //var e = $(".work-section").children();
-      //console.log(e);
-      //e.(.arduino).toggleClass("hidden-all");
+      // $("#work-showcase").children().not(".arduino").toggleClass("hidden-arduino");
+      // $("#work-showcase").children().not(".rpi").toggleClass("hidden-rpi");
+
       $(this).toggleClass("project-detail-role");
       $(this).toggleClass("category-clicked");
 

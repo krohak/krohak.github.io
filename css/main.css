@@ -1959,6 +1959,11 @@ footer .section {
   }
 }
 
+@media (min-width: 0px) {
+  .hidden-all {
+    display: none !important;
+  }
+}
 
 @media (min-width: 0px) {
   .hidden-arduino {
