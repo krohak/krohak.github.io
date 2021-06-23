@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/krohak.github.io/static/css/main.f1b51100.chunk.css",
+    "main.js": "/krohak.github.io/static/js/main.7623ab2e.chunk.js",
+    "main.js.map": "/krohak.github.io/static/js/main.7623ab2e.chunk.js.map",
+    "runtime-main.js": "/krohak.github.io/static/js/runtime-main.44464acc.js",
+    "runtime-main.js.map": "/krohak.github.io/static/js/runtime-main.44464acc.js.map",
+    "static/js/2.71f838ff.chunk.js": "/krohak.github.io/static/js/2.71f838ff.chunk.js",
+    "static/js/2.71f838ff.chunk.js.map": "/krohak.github.io/static/js/2.71f838ff.chunk.js.map",
+    "static/js/3.68aae459.chunk.js": "/krohak.github.io/static/js/3.68aae459.chunk.js",
+    "static/js/3.68aae459.chunk.js.map": "/krohak.github.io/static/js/3.68aae459.chunk.js.map",
+    "index.html": "/krohak.github.io/index.html",
+    "static/css/main.f1b51100.chunk.css.map": "/krohak.github.io/static/css/main.f1b51100.chunk.css.map",
+    "static/js/2.71f838ff.chunk.js.LICENSE.txt": "/krohak.github.io/static/js/2.71f838ff.chunk.js.LICENSE.txt",
+    "static/media/cadl.03279de7.gif": "/krohak.github.io/static/media/cadl.03279de7.gif",
+    "static/media/cadl.094f29a9.jpg": "/krohak.github.io/static/media/cadl.094f29a9.jpg",
+    "static/media/ires.6fde668d.gif": "/krohak.github.io/static/media/ires.6fde668d.gif",
+    "static/media/krohak.9d76ce74.jpg": "/krohak.github.io/static/media/krohak.9d76ce74.jpg",
+    "static/media/mdrb2.5cf00525.jpg": "/krohak.github.io/static/media/mdrb2.5cf00525.jpg",
+    "static/media/mind.3883a140.jpg": "/krohak.github.io/static/media/mind.3883a140.jpg",
+    "static/media/mld-screen.8eec700c.png": "/krohak.github.io/static/media/mld-screen.8eec700c.png",
+    "static/media/mld.36357f47.jpg": "/krohak.github.io/static/media/mld.36357f47.jpg",
+    "static/media/mld.8c7a7e54.gif": "/krohak.github.io/static/media/mld.8c7a7e54.gif",
+    "static/media/pr.0c65bf31.gif": "/krohak.github.io/static/media/pr.0c65bf31.gif",
+    "static/media/projects.8c08cafb.gif": "/krohak.github.io/static/media/projects.8c08cafb.gif",
+    "static/media/projects.a648d0c3.jpg": "/krohak.github.io/static/media/projects.a648d0c3.jpg",
+    "static/media/protei_rohak.7a5b35a8.gif": "/krohak.github.io/static/media/protei_rohak.7a5b35a8.gif",
+    "static/media/protei_rohak.f59c5683.jpg": "/krohak.github.io/static/media/protei_rohak.f59c5683.jpg",
+    "static/media/protei_rpi.dd64399e.jpg": "/krohak.github.io/static/media/protei_rpi.dd64399e.jpg",
+    "static/media/tzp.55396aff.jpg": "/krohak.github.io/static/media/tzp.55396aff.jpg",
+    "static/media/tzp.874942c7.gif": "/krohak.github.io/static/media/tzp.874942c7.gif",
+    "static/media/youtube.cfd6dff1.jpg": "/krohak.github.io/static/media/youtube.cfd6dff1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44464acc.js",
+    "static/js/2.71f838ff.chunk.js",
+    "static/css/main.f1b51100.chunk.css",
+    "static/js/main.7623ab2e.chunk.js"
+  ]
+}
