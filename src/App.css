@@ -1,0 +1,34 @@
+body {
+  color: #5d5d5d;
+  /*font-family: 'CircularStd', 'Helvetica Neue', Helvetica, sans-serif;*/
+  /*font-family: 'Slabo 27px', serif;*/
+  /*font-family: 'Merriweather', sans-serif;*/
+  font-family: 'Ubuntu', sans-serif !important;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  -webkit-animation: badyfade 10s ease;
+  animation: badyfade 10s ease;
+  overflow-x: hidden;
+}
+
+.work-layer-close .work-layer {
+  -webkit-transform: translate(100%, 0);
+  transform: 1s translate(100%, 0);
+}
+
+
+.work-layer-open .work-layer {
+  display: block;
+  -webkit-animation: layerin 0.5s ease;
+}
+
+
+.project-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0px;
+  -webkit-animation: bgfade .3s ease;
+  animation: bgfade .3s ease;
+}
