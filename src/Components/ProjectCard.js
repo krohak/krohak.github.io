@@ -37,6 +37,8 @@ const handleMouseLeave=()=>{
          onMouseLeave={handleMouseLeave}
           className={classes.media}
           image={image}
+          //TODO: Make the card / image size bigger
+          //TODO: Maybe clicking on the heading / card area takes you back to main screen
           title={title}
         />
         <CardContent>

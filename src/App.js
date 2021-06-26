@@ -9,7 +9,8 @@ import {
   Button,
   createMuiTheme,
   ThemeProvider,
-  Fade
+  Fade,
+  useMediaQuery
 } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMedium } from "@fortawesome/free-brands-svg-icons";
@@ -21,31 +22,14 @@ import {
   YouTube,
   Email,
 } from "@material-ui/icons";
-  import { makeStyles } from '@material-ui/core/styles';
-  import Avatar from "@material-ui/core/Avatar";
-  import Dialog from "./Components/Dialog";
-  import ProjectCard from "./Components/ProjectCard";
-  import Me from "./Components/Me";
-  import Mindorobots from "./Components/Mindorobots";
-  import ProteiRohak from "./Components/ProteiRohak";
-  import Mld from "./Components/Mld";
+import { makeStyles } from '@material-ui/core/styles';
+import Avatar from "@material-ui/core/Avatar";
+import Dialog from "./Components/Dialog";
+import ProjectCard from "./Components/ProjectCard";
+import Me from "./Components/Me";
+import me from './img/me.jpg';
+import { Projects } from './Projects';
 
-  import me from './img/me.jpg';
-  import mind from './img/mind.jpg';
-  import mld from './img/mld.jpg';
-  import protei_rpi from './img/protei_rpi.jpg';
-  import  protei_rohak from './img/protei_rohak.jpg';
-  import ires from './img/ires.jpg';
-  import tzp  from './img/tzp.jpg';
-  import cadl from './img/cadl.jpg';
-  import youtube from './img/youtube.jpg';
-  import projects from './img/projects.jpg';
-  import image_prot from './img/protei_rohak.gif';
-  import  image_mld from './img/mld.gif';
-  import  image_ires from './img/ires.gif';
-  import image_tzp from './img/tzp.gif';
-  import image_cadl from './img/cadl.gif';
-  import image_proj from './img/projects.gif';
   const useStyles = makeStyles((theme) => ({
     large: {
       width: theme.spacing(20),
@@ -77,110 +61,18 @@ function App() {
     { name: "#tensorflow", isSelected: false },
     { name: "#music", isSelected: false },
   ]);
-  const style = {
+  const  filterSelectedStyle= {
     textDecoration: "none",
     backgroundColor: "#858585",
     color: "#fff",
     borderRadius: "55px",
   };
-  const [projectsDetail, setProjectsDetails] = useState([
-    {
-      title: "MindoroBots",
-      content: "Oceanographic Swarm Robots to Map Coral Reefs",
-      img: mind,
-      type: "component",
-      body: <Mindorobots />,
-      styles: {
-        title: {
-          textAlign: "center",
-        },
-      },
-      tag: ["#raspberry pi", "#web", "#arduino"],
-      display: true,
-    },
-    {
-      title: "Protei Rohak",
-      content: "Android + Modular Shapeshifting Boat",
-      img: protei_rohak,
-      gif: image_prot,
-      type: "component",
-      body: <ProteiRohak />,
-      styles: {
-        title: {
-          textAlign: "center",
-        },
-      },
-      tag: ["#arduino", "#android"],
-      display: true,
-    },
-    {
-      title: "WWF Marine Litter Detective",
-      content: "Track Litter with Arduino",
-      img: mld,
-      gif: image_mld,
-      type: "component",
-      body: <Mld />,
-      styles: {
-        title: {
-          textAlign: "center",
-        },
-      },
-      tag: ["#web", "#arduino"],
-      display: true,
-    },
-    {
-      title: "Protei Rpi",
-      content: "Deploying a Network in the Ocean",
-      img: protei_rpi,
-      url: "https://github.com/krohak/Protei_Rpi",
-      tag: ["#raspberry pi", "#android"],
-      display: true,
-    },
-    {
-      title: "iResidence",
-      content: "Integrated Design Project",
-      img: ires,
-      gif: image_ires,
-      url: "https://github.com/krohak/Integrated-Design-Project",
-      tag: ["#raspberry pi", "#arduino"],
-      display: true,
-    },
-    {
-      title: "The Zero Point",
-      content: "Contemporary South Asian Music",
-      img: tzp,
-      gif: image_tzp,
-      url: "http://thezeropoint.com.hk/",
-      tag: ["#music"],
-      display: true,
-    },
-    {
-      title: "Creative Applications of Deep Learning",
-      content: "Experiments with Tensorflow",
-      img: cadl,
-      gif: image_cadl,
-      url: "https://github.com/krohak/CADL",
-      tag: ["#tensorflow"],
-      display: true,
-    },
-    {
-      title: "Miscellaneous Projects",
-      content: "Projet Divers",
-      img: projects,
-      gif: image_proj,
-      url: "https://github.com/krohak/Projects",
-      tag: ["#tensorflow", "#raspberry pi", "#arduino"],
-      display: true,
-    },
-    {
-      title: "Youtube Channel",
-      content: "Chaîne Youtube",
-      img: youtube,
-      url: "https://www.youtube.com/channel/UCausm_sTm0RlbKGvXGHaenA",
-      tag: ["#music", "#arduino", "#android"],
-      display: true,
-    },
-  ]);
+
+  const filterStyle = { 
+    backgroundColor: "#F1F1F1", 
+    borderRadius: "55px",
+  }
+  const [projectsDetail, setProjectsDetails] = useState(Projects);
 
   const handleFilter = (index) => {
     setFilters((prev) => {
@@ -251,6 +143,7 @@ function App() {
       <Container maxWidth="md">
         <Dialog
           open={openDialog}
+          fullScreen={useMediaQuery(theme.breakpoints.down('sm'))}
           onHandleClose={handleClose}
           {...dialogProps}
         />
@@ -261,17 +154,17 @@ function App() {
               <Grid
                 container
                 alignItems="center"
-                justify="flex-start"
+                justify="center"
                 spacing={10}
               >
-                <Grid item>
+                <Grid item md={3}  xs={8}>
                   <Avatar
-                    alt="Rohak singhal"
+                    alt="Rohak Singhal"
                     src={me}
                     className={classes.large}
                   />
                 </Grid>
-                <Grid item>
+                <Grid item md={9} xs={8}>
                   <Typography variant="h4">I'm Rohak</Typography>
                   <Button onClick={() => handleClickOpen(-1)}>see more</Button>
                 </Grid>
@@ -279,12 +172,12 @@ function App() {
             </Box>
           </Grid>
           <Grid item>
-            <Grid container alignItems="flex-start" justify="space-around">
+            <Grid container spacing={3} alignItems="flex-start" justify="center">
               {filters.map((filter, index) => (
                 <Grid item key={filter.name}>
                   <Button
                     onClick={() => handleFilter(index)}
-                    style={filter.isSelected ? style : { borderRadius: "55px" }}
+                    style={filter.isSelected ? filterSelectedStyle: filterStyle}
                   >
                     {filter.name}
                   </Button>
