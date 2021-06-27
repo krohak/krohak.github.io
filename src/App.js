@@ -138,12 +138,14 @@ function App() {
     },
   });
 
+  const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
+
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="md">
         <Dialog
           open={openDialog}
-          fullScreen={useMediaQuery(theme.breakpoints.down('sm'))}
+          fullScreen={isSmall}
           onHandleClose={handleClose}
           {...dialogProps}
         />
@@ -157,14 +159,14 @@ function App() {
                 justify="center"
                 spacing={10}
               >
-                <Grid item md={3}  xs={8}>
+                <Grid item md={3} xs={12} style={{textAlign:"-webkit-center"}}>    
                   <Avatar
                     alt="Rohak Singhal"
                     src={me}
                     className={classes.large}
                   />
                 </Grid>
-                <Grid item md={9} xs={8}>
+                <Grid item md={9} xs={12} style={isSmall? {textAlign:"center"} : null}>
                   <Typography variant="h4">I'm Rohak</Typography>
                   <Button onClick={() => handleClickOpen(-1)}>see more</Button>
                 </Grid>

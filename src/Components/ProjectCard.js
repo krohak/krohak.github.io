@@ -9,10 +9,10 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     maxWidth: 250,
-    minWidth:250
+    minWidth: 250,
   },
   media: {
-    height: 140,
+    height: 180,
   },
 });
 
@@ -37,8 +37,6 @@ const handleMouseLeave=()=>{
          onMouseLeave={handleMouseLeave}
           className={classes.media}
           image={image}
-          //TODO: Make the card / image size bigger
-          //TODO: Maybe clicking on the heading / card area takes you back to main screen
           title={title}
         />
         <CardContent>
