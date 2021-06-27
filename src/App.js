@@ -45,7 +45,7 @@ import { Projects } from './Projects';
     {name:'instagram',url:'https://www.instagram.com/krohak/',icon:Instagram,iconType:'material'},
     {name:'youtube',url:'https://www.youtube.com/channel/UCausm_sTm0RlbKGvXGHaenA', icon:YouTube,iconType:'material'},
     {name:'twitter',url:'https://twitter.com/RohakSinghal',icon:Twitter,iconType:'material'},
-    {name:'email',url:'mailto:krohak@hku.hk',icon:Email,iconType:'material'}
+    {name:'email',url:'mailto:rohaksinghal14@gmail.com',icon:Email,iconType:'material'}
   ]
 
   
