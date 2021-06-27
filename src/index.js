@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <React.StrictMode>
     {/* TODO: Add Router */}
+  { //TODO: Fix Favicon }
     <App />
   </React.StrictMode>,
   document.getElementById('root')
