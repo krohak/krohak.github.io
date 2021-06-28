@@ -11,7 +11,6 @@ import {
 import { createBrowserHistory } from "history";
 import { Projects } from './Projects';
 
-//TODO: Fix Favicon 
 ReactDOM.render(
   <React.StrictMode>
     <Router history={createBrowserHistory()}>
