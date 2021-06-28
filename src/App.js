@@ -12,6 +12,7 @@ import {
   Fade,
   useMediaQuery
 } from "@material-ui/core";
+import { createBrowserHistory } from "history";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMedium } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -30,29 +31,36 @@ import Me from "./Components/Me";
 import me from './img/me.jpg';
 import { Projects } from './Projects';
 
-  const useStyles = makeStyles((theme) => ({
-    large: {
-      width: theme.spacing(20),
-      height: theme.spacing(20),
-    },
-  }));
+const useStyles = makeStyles((theme) => ({
+  large: {
+    width: theme.spacing(20),
+    height: theme.spacing(20),
+  },
+}));
 
   
-  const socialConnects=[
-    {name:'facebook',url:'https://www.facebook.com/krohak',icon:Facebook,iconType:'material'},
-    {name:'medium',url:'https://medium.com/@krohak',icon:faMedium,iconType:'fontAwesome'},
-    {name:'github',url:'https://github.com/krohak',icon:GitHub,iconType:'material'},
-    {name:'instagram',url:'https://www.instagram.com/krohak/',icon:Instagram,iconType:'material'},
-    {name:'youtube',url:'https://www.youtube.com/channel/UCausm_sTm0RlbKGvXGHaenA', icon:YouTube,iconType:'material'},
-    {name:'twitter',url:'https://twitter.com/RohakSinghal',icon:Twitter,iconType:'material'},
-    {name:'email',url:'mailto:rohaksinghal14@gmail.com',icon:Email,iconType:'material'}
-  ]
+const socialConnects=[
+  {name:'facebook',url:'https://www.facebook.com/krohak',icon:Facebook,iconType:'material'},
+  {name:'medium',url:'https://medium.com/@krohak',icon:faMedium,iconType:'fontAwesome'},
+  {name:'github',url:'https://github.com/krohak',icon:GitHub,iconType:'material'},
+  {name:'instagram',url:'https://www.instagram.com/krohak/',icon:Instagram,iconType:'material'},
+  {name:'youtube',url:'https://www.youtube.com/channel/UCausm_sTm0RlbKGvXGHaenA', icon:YouTube,iconType:'material'},
+  {name:'twitter',url:'https://twitter.com/RohakSinghal',icon:Twitter,iconType:'material'},
+  {name:'email',url:'mailto:rohaksinghal14@gmail.com',icon:Email,iconType:'material'}
+]
 
   
-function App() {
+function App(props) {
   const classes = useStyles();
-  const [dialogProps, setDialogProps] = useState({});
-  const [openDialog, setOpenDialog] = useState(false);
+  const history = createBrowserHistory();
+
+  const theme = createMuiTheme({
+    typography: {
+      fontFamily: ["Ubuntu", "sans-serif"].join(","),
+    },
+  });
+  const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
+
   const [filters, setFilters] = useState([
     { name: "#android", isSelected: false },
     { name: "#arduino", isSelected: false },
@@ -61,7 +69,7 @@ function App() {
     { name: "#tensorflow", isSelected: false },
     { name: "#music", isSelected: false },
   ]);
-  const  filterSelectedStyle= {
+  const filterSelectedStyle= {
     textDecoration: "none",
     backgroundColor: "#858585",
     color: "#fff",
@@ -103,42 +111,55 @@ function App() {
     setProjectsDetails(modifiedProjectsDetail);
   }, [filters]);
 
-  const handleClickOpen = (index) => {
+  const handleProjects = (index) => {
     if (index === -1) {
-      setDialogProps({
+      return {
         title: "About Me",
         children: <Me />,
         styles: {
           title: { background: "#000", color: "#fff", textAlign: "center" },
           content: { background: "#000" },
         },
-      });
-      setOpenDialog(true);
-    } else {
-      if (projectsDetail[index].type === "component") {
-        setDialogProps({
+      }
+    } else if (projectsDetail[index].type === "component") {
+        return {
           title: projectsDetail[index].title,
           children: projectsDetail[index].body,
           styles: projectsDetail[index].styles,
-        });
-        setOpenDialog(true);
-      } else {
-        window.open(projectsDetail[index].url, "_blank").focus();
-      }
+        }
     }
-  };
+  }
 
-  const handleClose = () => {
-    // setDialogProps({});
+  const [dialogProps, setDialogProps] = useState(props.openDialog !== undefined? handleProjects(props.openDialog):{});
+  const [openDialog, setOpenDialog] = useState(props.openDialog !== undefined? true:false);
+
+  const handleClickOpen = (index) => {
+    if (index === -1 || projectsDetail[index].type === "component") {
+        setDialogProps(handleProjects(index))
+        setOpenDialog(true);
+        if(index === -1){
+          history.push(`/me`)
+        }else{
+          history.push(`/${projectsDetail[index].title.toLowerCase().replace(/\s/g, "-")}`)
+        }
+        
+    } else {
+      window.open(projectsDetail[index].url, "_blank").focus();
+    }
+     
+  };
+   const handleClose = () => {
     setOpenDialog(false);
+    history.push("/")
   };
-  const theme = createMuiTheme({
-    typography: {
-      fontFamily: ["Ubuntu", "sans-serif"].join(","),
-    },
-  });
+  useEffect(() => {
+    return history.listen( _ => {
+      if (history.action === 'POP') {
+        setOpenDialog(false);
+      }
+    })
+  })
 
-  const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
     <ThemeProvider theme={theme}>

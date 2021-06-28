@@ -3,11 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import { createBrowserHistory } from "history";
+import { Projects } from './Projects';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* TODO: Add Router */}
-    <App />
+    <Router history={createBrowserHistory()}>
+        <Switch>
+          {Projects.map((project, index) =>
+            <Route path={`/${project.title.toLowerCase().replace(/\s/g, "-")}`} exact key={index}>
+              <App openDialog={index}/>
+            </Route>
+           )}
+          <Route path="/me" exact>
+            <App openDialog={-1}/>
+          </Route>
+          <Route path="/">
+            <App/>
+          </Route>
+        </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
