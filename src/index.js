@@ -13,7 +13,7 @@ import { Projects } from './Projects';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router asename={process.env.PUBLIC_URL+ '/'} history={createBrowserHistory()}>
+    <Router basename={process.env.PUBLIC_URL+ '/'} history={createBrowserHistory()}>
         <Switch>
           {Projects.map((project, index) =>
             <Route path={`/${project.title.toLowerCase().replace(/\s/g, "-")}`} exact key={index}>
