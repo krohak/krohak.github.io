@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
-  Router,
+  BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -13,14 +13,14 @@ import { Projects } from './Projects';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router history={createBrowserHistory()}>
+    <Router basename={process.env.PUBLIC_URL} history={createBrowserHistory()}>
         <Switch>
           {Projects.map((project, index) =>
             <Route path={`/${project.title.toLowerCase().replace(/\s/g, "-")}`} exact key={index}>
               <App openDialog={index}/>
             </Route>
            )}
-          <Route path={process.env.PUBLIC_URL+ '/me'} exact>
+          <Route path="/me" exact>
             <App openDialog={-1}/>
           </Route>
           <Route path="/">
