@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
-  BrowserRouter as Router,
+  Router,
   Switch,
   Route,
 } from "react-router-dom";
