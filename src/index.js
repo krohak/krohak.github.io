@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
-  HashRouter as Router,
+  Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -13,7 +13,7 @@ import { Projects } from './Projects';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router asename={process.env.PUBLIC_URL} history={createBrowserHistory()}>
+    <Router asename={process.env.PUBLIC_URL+ '/'} history={createBrowserHistory()}>
         <Switch>
           {Projects.map((project, index) =>
             <Route path={`/${project.title.toLowerCase().replace(/\s/g, "-")}`} exact key={index}>
