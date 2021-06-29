@@ -13,14 +13,14 @@ import { Projects } from './Projects';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename={process.env.PUBLIC_URL+ '/'} history={createBrowserHistory()}>
+    <Router history={createBrowserHistory()}>
         <Switch>
           {Projects.map((project, index) =>
             <Route path={`/${project.title.toLowerCase().replace(/\s/g, "-")}`} exact key={index}>
               <App openDialog={index}/>
             </Route>
            )}
-          <Route path="/me" exact>
+          <Route path={process.env.PUBLIC_URL+ '/me'} exact>
             <App openDialog={-1}/>
           </Route>
           <Route path="/">
