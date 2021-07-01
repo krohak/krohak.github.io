@@ -20,21 +20,21 @@ const useStyles = makeStyles({
 const  ProjectCard =(props)=> {
   const classes = useStyles();
   const {img,content,title,gif,onHandleClickOpen,index}=props;
-  const [image,setImage]=useState(img);
+  const [image,setImage]=useState(gif);
 
+  // const handleMouseOver=()=>{
+  //   setImage(gif);
+  // }
+  // const handleMouseLeave=()=>{
+  //     setImage(img);
+  // }
 
-  const handleMouseOver=()=>{
-    setImage(gif);
-}
-const handleMouseLeave=()=>{
-    setImage(img);
-}
   return (
     <Card className={classes.root} onClick={()=> onHandleClickOpen(index)}>
       <CardActionArea>
         <CardMedia
-         onMouseOver={handleMouseOver}
-         onMouseLeave={handleMouseLeave}
+        //  onMouseOver={handleMouseOver}
+        //  onMouseLeave={handleMouseLeave}
           className={classes.media}
           image={image}
           title={title}

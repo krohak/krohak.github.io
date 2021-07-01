@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
    }
  }));
 
+// TODO: Fix image 
+// TODO: Fix text
+
 const Mld=()=>{
    const classes=useStyles();
 
@@ -57,13 +60,13 @@ const Mld=()=>{
                        WWF-Hong Kong, in cooperation with MakerBay, has designed a tracking device to simulate how litter enters the sea through storm drains and rivers, and is working with students from 11 schools to trace the journey of litter. This helps us understand the source of marine litter in Hong Kong and solve the problem together.
                        </Typography>
                    </Grid>
-                   <Grid item>
+                   {/* <Grid item>
                        <Typography component='span'>
                         <Link href='http://www.marinelitterdetective.net/' target='_blank' >
                             <Avatar src={mldScreen} className={classes.large} variant='rounded'  />
                         </Link>   
                        </Typography>
-                   </Grid>
+                   </Grid> */}
                    <Grid item>
                        <Typography component='span' style={{color:'#5d5d5d'}}>
                         I also presented the Marine Litter Detective project to students of <Link href='http://chi.camp/projects/' target='_blank' className={classes.link}>China Hardware Innovation Camp (CHIC)</Link> at an event organized by the <Link href='https://www.eda.admin.ch/hongkong' target='_blank' className={classes.link}>Consulate General of Switzerland</Link> in Hong Kong at MakerBay.

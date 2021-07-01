@@ -62,12 +62,11 @@ function App(props) {
   const isSmall = useMediaQuery(theme.breakpoints.down('sm'))
 
   const [filters, setFilters] = useState([
-    { name: "#android", isSelected: false },
-    { name: "#arduino", isSelected: false },
-    { name: "#web", isSelected: false },
-    { name: "#raspberry pi", isSelected: false },
-    { name: "#tensorflow", isSelected: false },
-    { name: "#music", isSelected: false },
+    { name: "#Machine Learning", isSelected: false },
+    { name: "#Entrepreneurship", isSelected: false },
+    { name: "#Research", isSelected: false },
+    { name: "#Product", isSelected: false },
+    { name: "#Music", isSelected: false },
   ]);
   const filterSelectedStyle= {
     textDecoration: "none",

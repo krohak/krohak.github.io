@@ -10,7 +10,7 @@ const   DialogModal=(props)=>{
     <div>
       <Dialog
         open={open}
-        transitionDuration = {800}
+        transitionDuration = {700}
         keepMounted
         onClose={onHandleClose}
         aria-labelledby="alert-dialog-slide-title"
