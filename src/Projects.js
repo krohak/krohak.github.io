@@ -124,14 +124,14 @@ export const Projects = [
       tag: ["#Entrepreneurship", "#Product"],
       display: true,
     },
-    {
-      title: "Protei Rpi",
-      content: "Deploying a Network in the Ocean",
-      gif: protei_rpi,
-      url: "https://github.com/krohak/Protei_Rpi",
-      tag: ["#Product", "#Research"],
-      display: true,
-    },
+    // {
+    //   title: "Protei Rpi",
+    //   content: "Deploying a Network in the Ocean",
+    //   gif: protei_rpi,
+    //   url: "https://github.com/krohak/Protei_Rpi",
+    //   tag: ["#Product", "#Research"],
+    //   display: true,
+    // },
     {
       title: "iResidence",
       content: "Integrated Design Project",

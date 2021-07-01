@@ -22,6 +22,7 @@ import {
   Instagram,
   YouTube,
   Email,
+  LinkedIn
 } from "@material-ui/icons";
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from "@material-ui/core/Avatar";
@@ -40,12 +41,13 @@ const useStyles = makeStyles((theme) => ({
 
   
 const socialConnects=[
-  {name:'facebook',url:'https://www.facebook.com/krohak',icon:Facebook,iconType:'material'},
-  {name:'medium',url:'https://medium.com/@krohak',icon:faMedium,iconType:'fontAwesome'},
+  {name:'linkedin',url:'https://www.linkedin.com/in/krohak/',icon:LinkedIn,iconType:'material'},
   {name:'github',url:'https://github.com/krohak',icon:GitHub,iconType:'material'},
   {name:'instagram',url:'https://www.instagram.com/krohak/',icon:Instagram,iconType:'material'},
-  {name:'youtube',url:'https://www.youtube.com/channel/UCausm_sTm0RlbKGvXGHaenA', icon:YouTube,iconType:'material'},
   {name:'twitter',url:'https://twitter.com/RohakSinghal',icon:Twitter,iconType:'material'},
+  {name:'facebook',url:'https://www.facebook.com/krohak',icon:Facebook,iconType:'material'},
+  {name:'youtube',url:'https://www.youtube.com/channel/UCausm_sTm0RlbKGvXGHaenA', icon:YouTube,iconType:'material'},
+  {name:'medium',url:'https://medium.com/@krohak',icon:faMedium,iconType:'fontAwesome'},
   {name:'email',url:'mailto:rohaksinghal14@gmail.com',icon:Email,iconType:'material'}
 ]
 
