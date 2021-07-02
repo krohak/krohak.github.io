@@ -8,7 +8,6 @@ import {
      Link
  } from "@material-ui/core";
  import mdrb2 from './../img/mdrb2.jpg';
- import InstagramEmbed from 'react-instagram-embed';
  
  const useStyles = makeStyles((theme) => ({
     large: {
@@ -49,19 +48,6 @@ const Mindorobots=()=>{
         
                 <Container maxWidth='md' >
                 <Grid item>
-                <InstagramEmbed
-                    url='https://www.instagram.com/p/BdncA8Qlu2J/'
-                    clientAccessToken='2005192659713221|3357c89c3ca91ae40665c76495ae2d24'
-                    maxWidth={320}
-                    hideCaption={false}
-                    containerTagName='div'
-                    protocol=''
-                    injectScript
-                    onLoading={() => {}}
-                    onSuccess={() => {}}
-                    onAfterRender={() => {}}
-                    onFailure={() => {}}
-                    />
                 </Grid>
                 <Grid item>
                 <Grid container justify='center' alignItems='center' spacing={3}>

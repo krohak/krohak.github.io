@@ -5,9 +5,8 @@ import QuoteGen from "./Components/QuoteGen";
 import Luxo from "./Components/Luxo";
 import EmployMe from "./Components/EmployMe";
 
-import mind from './img/mind.jpg';
-import protei_rpi from './img/protei_rpi.jpg';
 import youtube from './img/youtube.jpg';
+import tagcn from './img/tagcn.jpg'
 
 // import mld from './img/mld.jpg';
 // import  protei_rohak from './img/protei_rohak.jpg';
@@ -22,12 +21,17 @@ import gif_ires from './img/ires.gif';
 import gif_tzp from './img/tzp.gif';
 import gif_cadl from './img/cadl.gif';
 import gif_proj from './img/projects.gif';
+import gif_quotegen from './img/quotegen.gif'
+import gif_luxo from './img/luxo-low.gif'
+import gif_lexicon from './img/lexicon-low.gif'
+import gif_mindorobots from './img/mindorobots-low.gif'
+import gif_employme from './img/employme.gif'
 
 export const Projects = [
   {
   title: "Luxo",
   content: "A Personal Assistant Lamp",
-  // TODO: gif: Luxo,
+  gif: gif_luxo,
   type: "component",
   body: <Luxo />,
   styles: {
@@ -41,7 +45,7 @@ export const Projects = [
   {
     title: "QuoteGen",
     content: "Cross-Topic Quotes Generation using Word Embeddings",
-    // TODO: gif: QuoteGen,
+    gif: gif_quotegen,
     type: "component",
     body: <QuoteGen />,
     styles: {
@@ -55,7 +59,7 @@ export const Projects = [
     {
       title: "EmployMe",
       content: "Hult Prize Finalist",
-      // TODO: gif: EmployMe,
+      gif: gif_employme,
       type: "component",
       body: <EmployMe />,
       styles: {
@@ -69,7 +73,7 @@ export const Projects = [
     {
       title: "Tensorflow TAGCN",
       content: "Tensorflow Implementation of TAGCN (Du et al., 2017)",
-      // TODO: gif: TAGCN,
+      gif: tagcn,
       url: "https://github.com/krohak/TAGCN",
       tag: ["#Machine Learning", "#Research"],
       display: true,
@@ -77,15 +81,15 @@ export const Projects = [
     {
       title: "LexiCon",
       content: "Brain Computer Interface using Machine Learning",
-      // TODO: gif: LexiCon,
+      gif: gif_lexicon,
       url: "https://github.com/krohak/LexiCon",
       tag: ["#Machine Learning", "#Research"],
       display: true,
     },
     {
       title: "MindoroBots",
-      content: "Oceanographic Swarm Robots to Map Coral Reefs",
-      // TODO: gif: mind,
+      content: "Ocean Robot to Map Coral Reefs",
+      gif: gif_mindorobots,
       type: "component",
       body: <Mindorobots />,
       styles: {
