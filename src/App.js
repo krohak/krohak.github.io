@@ -153,6 +153,10 @@ function App(props) {
     setOpenDialog(false);
     history.push("/")
   };
+  const handleExited = () => {
+    setDialogProps({})
+  };
+  
   useEffect(() => {
     return history.listen( _ => {
       if (history.action === 'POP') {
@@ -169,6 +173,7 @@ function App(props) {
           open={openDialog}
           fullScreen={isSmall}
           onHandleClose={handleClose}
+          onHandleExited={handleExited}
           {...dialogProps}
         />
         <Fade in={true} timeout={700}>
