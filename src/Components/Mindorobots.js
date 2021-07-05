@@ -7,7 +7,19 @@ import {
      makeStyles,
      Link
  } from "@material-ui/core";
- import mdrb2 from './../img/mdrb2.jpg';
+ import YoutubeEmbed from "./YoutubeEmbed";
+ import {
+    Instagram,
+    Language,
+    Assessment
+  } from "@material-ui/icons";
+
+ const socialConnects =[
+    {name:'instagram',url:'https://www.instagram.com/mindorobots/',icon:Instagram,iconType:'material'},
+    {name:'website',url:'https://www.jamesdysonaward.org/en-HK/2018/project/mindorobots/',icon:Language,iconType:'material'},
+    {name:'paper',url:'https://www.researchgate.net/publication/337648583_Coral_Reef_Mapping_using_Ocean_Drones_Laser_Quadrat',icon:Assessment,iconType:'material'},
+
+  ]
  
  const useStyles = makeStyles((theme) => ({
     large: {
@@ -21,18 +33,6 @@ import {
     }
   }));
 
-// TODO: Fix the image resizing in body
-// TODO: Add the paper link, newspaper article, 3rd recon. etc
-// https://www.instagram.com/p/BdAbT9JldFL/
-// https://www.instagram.com/p/BdncA8Qlu2J/
-// https://www.jamesdysonaward.org/en-HK/2018/project/mindorobots/
-// https://www.facebook.com/mindorobots/videos/1959047024123607
-// https://www.gmanetwork.com/news/video/stateofthenation/450887/robot-na-naimbento-ng-mga-estudyante-puwedeng-magamit-sa-coral-mapping/video/
-// https://www.youtube.com/watch?v=K5lxQky4GaI
-// https://www.facebook.com/mindorobots/photos/pcb.2315579441803695/2315579021803737
-// https://mb.com.ph/2018/02/14/robots-deployed-to-map-coral-reefs-in-mindoro/
-// https://www.instagram.com/p/BfSvF98hZVk/
-
 const Mindorobots=()=>{
     const classes=useStyles();
 
@@ -40,50 +40,108 @@ const Mindorobots=()=>{
         <Grid container spacing={4}>
             <Grid item xs={12}>
                 <Grid container justify='center' alignItems='center' spacing={1}>
-                    <Grid item ><Button variant="contained" disabled style={{borderRadius:'55px'}}>#Arduino</Button></Grid>
-                    <Grid item><Button variant="contained" disabled style={{borderRadius:'55px'}}>#Web</Button></Grid>
-                    <Grid item><Button variant="contained" disabled style={{borderRadius:'55px'}}>#Raspberry Pi</Button></Grid>
+                    <Grid item ><Button variant="contained" disabled style={{borderRadius:'55px'}}>#Entrepreneurship</Button></Grid>
+                    <Grid item><Button variant="contained" disabled style={{borderRadius:'55px'}}>#Product</Button></Grid>
+                    <Grid item><Button variant="contained" disabled style={{borderRadius:'55px'}}>#Research</Button></Grid>
                 </Grid>
             </Grid>
-        
-                <Container maxWidth='md' >
+            <Grid item xs={12}>
+            <Grid
+                container
+                justify='center' alignItems='center'
+                spacing={4}
+                >
+                  {socialConnects.map((social) => (
+                    <Grid item key={social.name}>
+                      <Link
+                        color="textSecondary"
+                        underline="hover"
+                        target="_blank"
+                        rel="noreferrer"
+                        href={social.url}
+                      >                        
+                      <social.icon />
+                      </Link>
+                    </Grid>
+                  ))}
+              </Grid>
+            </Grid>
+            <Container maxWidth='md' >
                 <Grid item>
-                </Grid>
-                <Grid item>
-                <Grid container justify='center' alignItems='center' spacing={3}>
-                    <Grid item >
-                        <Typography component='span' style={{color:'#5d5d5d'}}>MindoroBots is a research project which aims to map Coral Reefs around the island of <Link href='https://www.google.co.in/maps/place/Mindoro/@12.8684646,120.3681139,9z/data=!3m1!4b1!4m5!3m4!1s0x33bc82a795f0b0a3:0xa7c97d5adf33b09b!8m2!3d13.1162266!4d121.0793705' target='_blank' className={classes.link}> Mindoro,Philippines</Link> using a Swarm of Oceanographic Robots. Funded by <Link href='http://ghelc.hku.hk/HKU' target='_blank' className={classes.link}>GHELC</Link>, we shall work with experts from <Link href='https://www.scoutbots.com/' target='_blank' className={classes.link}>Scoutbots</Link> and <Link href='http://www.ecotoneresilience.org/' className={classes.link} target='_blank'>Ecotone Resilience</Link> to build and test these robots in Hong Kong from September to December 2017.</Typography>
+                    <Grid container justify='center' direction='column' alignItems='center' spacing={3}>
+                        <Grid item >
+                            <Typography component='span' style={{color:'#5d5d5d'}}>
+                            Coral reef ecosystems are some of the diverse and valuable ecosystems on earth. They support more species per unit area than any other marine environment, including about 4,000 species of fish, 800 species of hard corals and hundreds of other species as well as provide goods and services worth $375 billion each year. However, due to climate change, only about 46% of the world’s coral were considered healthy in 2008 and this percentage has dropped further recently. Coral protection is key for the sustenance of human life on earth and we started Mindorobots to make it affordable and viable for local communities to map and conserve their reefs.	
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <div style={{width:'400px'}}>
+                                <YoutubeEmbed embedId='bpGnt_LmD_o' />
+                            </div>
+                        </Grid>
+                        <Grid item >
+                            <Typography component='span' style={{color:'#5d5d5d'}}>
+                            A big issue with coral conservation is reef mapping - which is currently done by divers manually moving and photographing every unit area of the reef. MindoroBot is an ocean robot which can autonomously sail, photograph and map Coral Reefs at a low cost with a laser quadrat.			
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <div style={{width:'400px'}}>
+                                <YoutubeEmbed embedId='nhH-gh0Wbfk' />
+                            </div>
+                        </Grid>
+                        <Grid item></Grid>
                     </Grid>
-                    <Grid item>
-                        <Typography component='span' style={{color:'#5d5d5d'}}>I, along with <Link href='http://sdhntgupta.com/' target='_blank' className={classes.link}>Mr. Sidhant Gupta</Link>, under the guidance of <Link href='https://www.eee.hku.hk/people/kslui/' target='_blank' className={classes.link}>Dr. K.S Lui</Link> and <Link href='http://www.cesarharada.com/' target='_blank' className={classes.link}>Mr. Cesar Harada</Link>, initiated the MindoRobots project.</Typography>
+                    <Grid container justify='center' direction='column' alignItems='center' spacing={1}>
+                        <Grid item >
+                            <Typography component='span' style={{color:'#5d5d5d'}}>
+                            <Link href='https://www.researchgate.net/publication/337648583_Coral_Reef_Mapping_using_Ocean_Drones_Laser_Quadrat' target='_blank' className={classes.link}>Read our research paper here</Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item >
+                            <Typography component='span' style={{color:'#5d5d5d'}}>
+                            <Link href='https://www.jamesdysonaward.org/en-HK/2018/project/mindorobots/' target='_blank' className={classes.link}>James Dyson Award, National Runners Up</Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item ></Grid>
+                        <Grid item ></Grid>
+                        <Grid item ></Grid>
+                        <Grid item ></Grid>
                     </Grid>
-                    <Grid item>
-                        <Avatar alt="MindoroBots" src={mdrb2} variant="rounded"  className={classes.large} />
+                    <Grid container justify='center' direction='column' alignItems='center' spacing={3}>
+                        <Grid item >
+                            <Typography variant="h4" >
+                            Media Coverage
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <div style={{width:'400px'}}>
+                                <YoutubeEmbed embedId='cf1y26zTJLk' />
+                            </div>
+                        </Grid>
+                        <Grid item></Grid>
                     </Grid>
-                    <Grid item>
-                        <Typography  component='span' style={{color:'#5d5d5d'}}>
-                        In January 2018, using the massive amount of data that we generate in Mindoro, we will work with environmentalists and researchers to determine a safe coral protection baseline, which will serve as a guideline to the government when designating tourist areas in Mindoro.
-                        </Typography>
+                    <Grid container justify='center' direction='column' alignItems='center' spacing={1}>
+                        <Grid item >
+                            <Typography component='span' style={{color:'#5d5d5d'}}>
+                            <Link href='https://mb.com.ph/2018/02/14/robots-deployed-to-map-coral-reefs-in-mindoro/' target='_blank' className={classes.link}>Manilla Bulletin Coverage</Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item >
+                            <Typography component='span' style={{color:'#5d5d5d'}}>
+                            <Link href='https://www.gmanetwork.com/news/video/stateofthenation/450887/robot-na-naimbento-ng-mga-estudyante-puwedeng-magamit-sa-coral-mapping/video/' target='_blank' className={classes.link}>GMA Network Coverage</Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item >
+                            <Typography component='span' style={{color:'#5d5d5d'}}>
+                            <Link href='https://www.eee.hku.hk/news/project-mindorobots-was-awarded-national-runner-up-in-the-james-dyson-award-2018/' target='_blank' className={classes.link}>The University of Hong Kong Coverage</Link>
+                            </Typography>
+                        </Grid>
                     </Grid>
-                    <Grid item>
-                        <Typography component='span' style={{color:'#5d5d5d'}}>
-                        Further, this data that we generate as well as the robots would be made open source, and shall go a long way in initiating, supporting and growing similar projects across the world for negligible cost.   
-                        </Typography>
-                    </Grid>
-                    <Grid item>
-                        <Typography component='span' style={{color:'#5d5d5d'}}>
-                        Know more about the MindoRobots team and trace our exciting jouney on the <Link href='https://mindorobots.wordpress.com/' target='_blank' className={classes.link}>MindoroBots Website</Link>.
-                            Follow us on <Link href='https://www.facebook.com/mindorobots/' className={classes.link} target='_blank'>Facebook</Link> and <Link href='https://www.instagram.com/mindorobots/' className={classes.link} target='_blank'>Instagram</Link>.
-                        </Typography>
-                    </Grid>
-                    </Grid>
-                    </Grid>
-                </Container>
-            
-        </Grid>
+              </Grid>
+            </Container>
+            </Grid>
     )
 
 }
-
 
 export default Mindorobots;

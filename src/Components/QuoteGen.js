@@ -97,7 +97,7 @@ const QuoteGen=()=>{
               <Grid item></Grid>
               <Grid item>
                   <Typography  component='span' style={{color:'#5d5d5d'}}>
-                  Made with Tensorflow Keras, the Machine Learning model uses LSTM and Dense hidden layers and is trained using the Adam optimizer. Checkout the Jupyter notebook with the detailed code walk-through <Link href='https://github.com/krohak/QuoteGen/blob/master/Quotes%20Generation%20using%20Word%20Embeddings.ipynb' target='_blank' className={classes.link}>here</Link>. Or read the full paper explaining our commplete process <Link href='https://github.com/krohak/QuoteGen/blob/master/QuoteGen-Report.pdf' target='_blank' className={classes.link}>here</Link>. 
+                  Made with Tensorflow Keras, the Machine Learning model uses LSTM and Dense hidden layers and is trained using the Adam optimizer. Checkout the Jupyter notebook with the detailed code walk-through <Link href='https://github.com/krohak/QuoteGen/blob/master/Quotes%20Generation%20using%20Word%20Embeddings.ipynb' target='_blank' className={classes.link}>here</Link>. Or read the full paper explaining our complete process <Link href='https://github.com/krohak/QuoteGen/blob/master/QuoteGen-Report.pdf' target='_blank' className={classes.link}>here</Link>. 
                   </Typography>
               </Grid>
               <Grid item >

@@ -12,6 +12,7 @@ import rohak from './../img/krohak.jpg';
 //TODO: me pic 
 // https://www.facebook.com/mindorobots/photos/pcb.2315579441803695/2315579291803710
 // TODO: fix pic alignment
+// TODO: Update write up
 
 const useStyles = makeStyles((theme) => ({
     large: {

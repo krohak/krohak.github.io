@@ -82,10 +82,8 @@ const Luxo=()=>{
                         </Typography>
                     </Grid>
                     <Grid item>
-                    <div style={{width:'400px'}} >
                     <div style={{width:'400px'}}>
                       <YoutubeEmbed embedId='BRVEiJXj-HU' />
-                    </div>
                     </div>
                     </Grid>
                     <Grid item>

@@ -20,9 +20,6 @@ const useStyles = makeStyles((theme) => ({
    }
  }));
 
-// TODO: Fix image 
-// TODO: Fix text
-
 const ProteiRohak=()=>{
    const classes=useStyles();
 

@@ -8,13 +8,6 @@ import EmployMe from "./Components/EmployMe";
 import youtube from './img/youtube.jpg';
 import tagcn from './img/tagcn.jpg'
 
-// import mld from './img/mld.jpg';
-// import  protei_rohak from './img/protei_rohak.jpg';
-// import ires from './img/ires.jpg';
-// import tzp  from './img/tzp.jpg';
-// import cadl from './img/cadl.jpg';
-// import projects from './img/projects.jpg';
-
 import gif_prot from './img/protei_rohak.gif';
 import gif_mld from './img/mld.gif';
 import gif_ires from './img/ires.gif';
@@ -128,14 +121,6 @@ export const Projects = [
       tag: ["#Entrepreneurship", "#Product"],
       display: true,
     },
-    // {
-    //   title: "Protei Rpi",
-    //   content: "Deploying a Network in the Ocean",
-    //   gif: protei_rpi,
-    //   url: "https://github.com/krohak/Protei_Rpi",
-    //   tag: ["#Product", "#Research"],
-    //   display: true,
-    // },
     {
       title: "iResidence",
       content: "Integrated Design Project",
