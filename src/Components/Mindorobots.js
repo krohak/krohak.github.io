@@ -97,9 +97,28 @@ const Mindorobots=()=>{
                             <Link href='https://www.researchgate.net/publication/337648583_Coral_Reef_Mapping_using_Ocean_Drones_Laser_Quadrat' target='_blank' className={classes.link}>Read our research paper here</Link>
                             </Typography>
                         </Grid>
+                        <Grid item ></Grid>
+                        <Grid item ></Grid>
+                        <Grid item ></Grid>
+                        <Grid item ></Grid>
+                    </Grid>
+                    <Grid container justify='center' direction='column' alignItems='center' spacing={3}>
+                        <Grid item >
+                            <Typography variant="h4" >
+                            Awards
+                            </Typography>
+                        </Grid>
+                        <Grid item></Grid>
+                    </Grid>
+                    <Grid container justify='center' direction='column' alignItems='center' spacing={1}>
                         <Grid item >
                             <Typography component='span' style={{color:'#5d5d5d'}}>
                             <Link href='https://www.jamesdysonaward.org/en-HK/2018/project/mindorobots/' target='_blank' className={classes.link}>James Dyson Award, National Runners Up</Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item >
+                            <Typography component='span' style={{color:'#5d5d5d'}}>
+                            <Link href='https://www.eee.hku.hk/news/project-mindorobots-was-awarded-national-runner-up-in-the-james-dyson-award-2018/' target='_blank' className={classes.link}>Gallant Ho Experiential Learning Award</Link>
                             </Typography>
                         </Grid>
                         <Grid item ></Grid>
@@ -129,11 +148,6 @@ const Mindorobots=()=>{
                         <Grid item >
                             <Typography component='span' style={{color:'#5d5d5d'}}>
                             <Link href='https://www.gmanetwork.com/news/video/stateofthenation/450887/robot-na-naimbento-ng-mga-estudyante-puwedeng-magamit-sa-coral-mapping/video/' target='_blank' className={classes.link}>GMA Network Coverage</Link>
-                            </Typography>
-                        </Grid>
-                        <Grid item >
-                            <Typography component='span' style={{color:'#5d5d5d'}}>
-                            <Link href='https://www.eee.hku.hk/news/project-mindorobots-was-awarded-national-runner-up-in-the-james-dyson-award-2018/' target='_blank' className={classes.link}>The University of Hong Kong Coverage</Link>
                             </Typography>
                         </Grid>
                     </Grid>
