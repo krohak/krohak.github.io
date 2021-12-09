@@ -19,6 +19,7 @@ import gif_luxo from './img/luxo-low.gif'
 import gif_lexicon from './img/lexicon-low.gif'
 import gif_mindorobots from './img/mindorobots-low.gif'
 import gif_employme from './img/employme.gif'
+import gif_gans from './img/gans.gif'
 
 export const Projects = [
   {
@@ -53,13 +54,7 @@ export const Projects = [
       title: "EmployMe",
       content: "Hult Prize Finalist",
       gif: gif_employme,
-      type: "component",
-      body: <EmployMe />,
-      styles: {
-        title: {
-          textAlign: "center",
-        },
-      },
+      url: "https://www.instagram.com/employmeglobal/",
       tag: ["#Entrepreneurship"],
       display: true,
     },
@@ -132,7 +127,7 @@ export const Projects = [
     {
       title: "GANs Specialization",
       content: "Coursera",
-      // TODO: gif: GANs,
+      gif: gif_gans,
       url: "https://github.com/krohak/GANs-deeplearning",
       tag: ["#Machine Learning", "#Research"],
       display: true,
