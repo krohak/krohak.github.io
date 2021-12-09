@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f1b51100.chunk.css",
-    "main.js": "/static/js/main.95f2a2e8.chunk.js",
-    "main.js.map": "/static/js/main.95f2a2e8.chunk.js.map",
+    "main.js": "/static/js/main.ac8e581a.chunk.js",
+    "main.js.map": "/static/js/main.ac8e581a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4429701b.js",
     "runtime-main.js.map": "/static/js/runtime-main.4429701b.js.map",
     "static/js/2.13b8edb3.chunk.js": "/static/js/2.13b8edb3.chunk.js",
@@ -22,6 +22,7 @@
     "static/media/mindorobots-low.8940ba20.gif": "/static/media/mindorobots-low.8940ba20.gif",
     "static/media/mld-screen.8eec700c.png": "/static/media/mld-screen.8eec700c.png",
     "static/media/mld.8c7a7e54.gif": "/static/media/mld.8c7a7e54.gif",
+    "static/media/music.7eba533e.gif": "/static/media/music.7eba533e.gif",
     "static/media/pr.0c65bf31.gif": "/static/media/pr.0c65bf31.gif",
     "static/media/projects.8c08cafb.gif": "/static/media/projects.8c08cafb.gif",
     "static/media/protei_rohak.7a5b35a8.gif": "/static/media/protei_rohak.7a5b35a8.gif",
@@ -34,6 +35,6 @@
     "static/js/runtime-main.4429701b.js",
     "static/js/2.13b8edb3.chunk.js",
     "static/css/main.f1b51100.chunk.css",
-    "static/js/main.95f2a2e8.chunk.js"
+    "static/js/main.ac8e581a.chunk.js"
   ]
 }
