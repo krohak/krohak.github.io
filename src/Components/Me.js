@@ -9,11 +9,6 @@ import {
 } from "@material-ui/core";
 import rohak from './../img/krohak.jpg';
 
-//TODO: me pic 
-// https://www.facebook.com/mindorobots/photos/pcb.2315579441803695/2315579291803710
-// TODO: fix pic alignment
-// TODO: Update write up
-
 const useStyles = makeStyles((theme) => ({
     large: {
       width:250,
@@ -36,34 +31,25 @@ const Me =(props)=>{
                 <Grid item md={7}>
                     <Grid container spacing={2}>
                         <Grid item>
-                        <Typography style={{color:'#fff'}} component='p'> Hey - I'm Rohak, a 4th year Computer Engineering undergraduate student at <Link href='https://www.hku.hk/' target='_blank' style={{color:'#fff'}} underline='always'>The University of Hong Kong</Link>.</Typography>
+                        <Typography style={{color:'#fff'}} component='p'> I'm Rohak, a Computer Engineering graduate from The University of Hong Kong. I love learning new technologies in Machine Learning, Web and Android App Dev and IoT.
+                        </Typography>
                         </Grid>
                         <Grid item>
-                        <Typography style={{color:'#fff'}} component='p'>I love teaching myself new technologies and code from the diverse fields of Machine Learning, Web App Dev, Signal Processing and IoT.</Typography>  
+                        <Typography style={{color:'#fff'}} component='p'>I'm currently working as a Quant Research Developer at JPMorgan HK.
+                        </Typography>  
                         </Grid>
                         <Grid item>
-                        <Typography style={{color:'#fff'}}  component='p'>At HKU, I have been a Machine Learning Research Assistant working under <Link href='https://www.eee.hku.hk/~ycwu/' target='_blank' style={{color:'#fff'}} underline='always'>Dr. Y.C. Wu</Link> and a Teaching Assistant for a Python / C++ / C course. I have founded <Link href='https://mindorobots.wordpress.com/' target='_blank' style={{color:'#fff'}} underline='always'>MindoRobots</Link>, a research project which aims to map Coral Reefs around the island of Mindoro, Philippines using a Swarm of Oceanographic Robots.</Typography> 
+                        <Typography style={{color:'#fff'}}  component='p'>
+                        I enjoy reading research and fiction on the creative applications of Machine Learning and Artificial Intelligence. Currently geeking out over <Link href='https://openai.com/blog/dall-e' target='_blank' style={{color:'#fff'}} underline='always'>DALL·E</Link> and <Link href='https://nvlabs.github.io/stylegan3/' target='_blank' style={{color:'#fff'}} underline='always'>StyleGAN3</Link>. Reading <Link href='https://www.goodreads.com/en/book/show/43565360-artificial-intelligence' target='_blank' style={{color:'#fff'}} underline='always'> Artificial Intelligence: A Guide for Thinking Humans</Link> these days.
+                        </Typography> 
                         </Grid>
                         <Grid item>
-                            <Typography style={{color:'#fff'}} component='p'>I'm also a Guitarist, currently a part of <Link href='http://thezeropoint.com.hk/' target='_blank' style={{color:'#fff'}} underline='always'>The Zero Point fusion ensemble</Link>.</Typography>
+                        <Typography style={{color:'#fff'}} component='p'>I'm also a Musician, currently a part of <Link href='https://www.youtube.com/watch?v=X0bqkoqr-fM' target='_blank' style={{color:'#fff'}} underline='always'>The Zero Point fusion ensemble</Link>. Grooving to <Link href='https://open.spotify.com/artist/4XMc1qHObZ7aXQrH5MmbjK?si=9RFX3jkETMe9ld8PfXdiEg' target='_blank' style={{color:'#fff'}} underline='always'> Busty and the Bass </Link> and <Link href='https://open.spotify.com/artist/2F9WG9ugzneeesOZfmQ18V?si=cAdJ7BqzRJ-Br4yduaaBQw' target='_blank' style={{color:'#fff'}} underline='always'> Shubh Saran </Link>.
+                        </Typography>
                         </Grid>
                     </Grid>
                                          
                 </Grid>
-            </Grid>
-        </Grid>
-        <Grid item xs={12}>
-           <Typography style={{color:'#fff',textAlign:'center'}} variant='h6'>Courses</Typography>
-            <Grid container justify='center'>
-            <Grid item>
-            <ul>
-                <li style={{color:'#fff'}}>COMP3314 - Machine Learning</li>
-                <li style={{color:'#fff'}}> COMP3250 - Design and Analysis of Algorithms</li>
-                <li style={{color:'#fff'}}>ELEC3244 - Digital Signal Processing</li>
-                <li style={{color:'#fff'}}>ELEC3542 - Advanced Programming and Application Development</li>
-                <li style={{color:'#fff'}}>COMP3297 - Software Engineering</li>
-            </ul>
-            </Grid>
             </Grid>
         </Grid>
         </Grid>

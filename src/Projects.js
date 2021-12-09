@@ -20,6 +20,7 @@ import gif_lexicon from './img/lexicon-low.gif'
 import gif_mindorobots from './img/mindorobots-low.gif'
 import gif_employme from './img/employme.gif'
 import gif_gans from './img/gans.gif'
+import gif_music from './img/music.gif'
 
 export const Projects = [
   {
@@ -33,7 +34,7 @@ export const Projects = [
       textAlign: "center",
     },
   },
-  tag: ["#Product"],
+  tag: ["#Machine Learning","#Product"],
   display: true,
   },
   {
@@ -151,7 +152,7 @@ export const Projects = [
     {
       title: "Rohak Singhal Music",
       content: "Instagram Page",
-      // TODO: gif: Music,
+      gif: gif_music,
       url: "https://www.instagram.com/rohaksinghal/",
       tag: ["#Music"],
       display: true,
